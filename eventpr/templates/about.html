@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About
+
+{% endblock %}
+
+
+{% block content %}
+<div style="background-image: url('{% static "images/bb1.jpg" %}') ; background-size: cover; background-position: center; height: 100vh;">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+<section style="background: #fff; padding: 30px; margin: 20px 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div style="max-width: 1100px; margin: auto; padding: 20px;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; color: #333;">About Ira Events</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 20px; color: #555;">Welcome to Ira Events, where we turn your dreams into reality!
+            is an interactive company that provides services within different areas of the entertainment production industry from Live Event Productions to the AV Rental & Installation Solutions as an established company located
+             in the capital city of United Arab Emirates, Abu Dhabi – Musaffah Industrial Area since 2011, with access to the entire country & GCC.
+    
+            With years of experience in the event management industry, we are dedicated to providing seamless, stress-free, and unforgettable experiences. Whether it's a corporate event, wedding, or private celebration, Ira Events is here to handle every detail with professionalism and creativity.</p>
+        
+        <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Our Mission</h3>
+        <p style="font-size: 1.1rem; margin-bottom: 20px; color: #555;">Our mission is simple: to create memorable events that exceed expectations. We believe in making each event unique, tailored to the needs and desires of our clients.
+            To provide 360 degree event management services to clients throughout the private and commercial sector, while ensuring that everyone – 
+            staff, clients and guests – enjoy the experience
+        </p>
+        
+        <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #333;">Why Choose Us?</h3>
+        <ul style="list-style: disc; padding-left: 20px; color: #555;">
+            <li style="margin-bottom: 10px; font-size: 1rem;">Experienced and Creative Team</li>
+            <li style="margin-bottom: 10px; font-size: 1rem;">End-to-End Event Management</li>
+            <li style="margin-bottom: 10px; font-size: 1rem;">Personalized and Professional Service</li>
+            <li style="margin-bottom: 10px; font-size: 1rem;">Strong Vendor Relationships</li>
+        </ul>
+    </div>
+
+</section>
+</div>
+</div>
+{% endblock %}

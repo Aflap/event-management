@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Booking
+{% endblock %}
+
+{% block content %}
+<!-- Add a background image for the whole page -->
+
+<div style="background-image: url('{% static "images/bb1.jpg" %}') ; background-size: cover; background-position: center; height: 90vh;">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="col-md-6">
+            <h1 class="text-center text-dark mb-4"><strong>Book Your Events</strong></h1>
+
+            <!-- The form is untouched, just wrapped in a stylish container -->
+            <div class="p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 15px;">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-primary w-100">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
